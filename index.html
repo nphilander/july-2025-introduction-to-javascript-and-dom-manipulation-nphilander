@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <meta
+      content="description"
+      description="Nokhwezi Week 5 Web Dev Assingment"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Week 5 Assingment</title>
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Fundamentals Demo</h1>
+    </header>
+
+    <main>
+      <!-- Part 1: JavaScript Basics -->
+      <section id="part1">
+        <h2>Part 1: JavaScript Basics</h2>
+        <p>Variables, data types, operators, and conditionals</p>
+
+        <div class="demo-container">
+          <div class="demo-box">
+            <h3>Check your drving age</h3>
+            <p>Enter your age to check if you can drive:</p>
+            <input type="number" id="ageInput" placeholder="Enter your age" />
+            <button onclick="checkAge()">Check Age</button>
+            <div id="ageOutput" class="output"></div>
+          </div>
+
+          <div class="demo-box">
+            <h3>Number Comparison</h3>
+            <p>Enter two numbers to compare them:</p>
+            <input type="number" id="num1" placeholder="First number" />
+            <input type="number" id="num2" placeholder="Second number" />
+            <button onclick="compareNumbers()">Compare</button>
+            <div id="comparisonOutput" class="output"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2: JavaScript Functions -->
+      <section id="part2">
+        <h2>Part 2: JavaScript Functions</h2>
+        <p>Reusable blocks of logic for cleaner code</p>
+
+        <div class="demo-container">
+          <div class="demo-box">
+            <h3>Simple Calculator</h3>
+            <p>Enter two numbers and select an operation:</p>
+            <input type="number" id="calcNum1" placeholder="First number" />
+            <input type="number" id="calcNum2" placeholder="Second number" />
+            <div>
+              <button onclick="calculate('add')">Add</button>
+              <button onclick="calculate('subtract')">Subtract</button>
+              <button onclick="calculate('multiply')">Multiply</button>
+              <button onclick="calculate('divide')">Divide</button>
+            </div>
+            <div id="calcOutput" class="output"></div>
+          </div>
+
+          <div class="demo-box">
+            <h3>String Formatter</h3>
+            <p>Enter text to format it in different ways:</p>
+            <input type="text" id="formatInput" placeholder="Enter text" />
+            <div>
+              <button onclick="formatText('upper')">UPPERCASE</button>
+              <button onclick="formatText('lower')">lowercase</button>
+            </div>
+            <div id="formatOutput" class="output"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3: JavaScript Loops -->
+      <section id="part3">
+        <h2>Part 3: JavaScript Loops</h2>
+        <p>Repetition and iteration with loops</p>
+
+        <div class="demo-container">
+          <div class="demo-box">
+            <h3>Number Counter</h3>
+            <p>Enter a number to count to from 1:</p>
+            <input type="number" id="countInput" placeholder="Enter a number" />
+            <button onclick="countNumbers()">Start Counting</button>
+            <div id="countOutput" class="output"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 4: DOM Manipulation -->
+      <section id="part4">
+        <h2>Part 4: DOM Manipulation</h2>
+        <p>Making the page interactive with DOM manipulation</p>
+
+        <div class="demo-container">
+          <div class="demo-box">
+            <h3>Content Toggler</h3>
+            <p>Click to toggle content visibility:</p>
+            <button onclick="toggleContent()">Toggle Content</button>
+            <div id="toggledContent" class="output">
+              <p>This content can be shown or hidden!</p>
+              <p>JavaScript gives us control over the DOM.</p>
+            </div>
+          </div>
+
+
+          <div class="demo-box">
+            <h3>Style Modifier</h3>
+            <p>Click to change the style of this box:</p>
+            <button onclick="changeStyles()">Change Styles</button>
+            <button onclick="resetStyles()">Reset Styles</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>JavaScript Fundamentals Demo - School Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
